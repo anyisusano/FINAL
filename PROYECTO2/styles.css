@@ -38,6 +38,11 @@
     text-align: left;
     
 }
+.idioma1{
+    font-size: 22px;
+    text-align: left;
+    
+}
 
 .dots{
     margin: 30px;
@@ -224,6 +229,10 @@ body{
     width: 190px;
     margin-right: 40px;
 }
+
+.info{
+    max-width: 200px;
+}
 @media  (max-width: 650px) {
     .columnas{
         display:grid;
@@ -256,6 +265,19 @@ body{
     .parrfo{
         max-width: 500px;
     }
+    .nombre{
+        font-size: 68px;
+    }
+    .apellido{
+        font-size: 68px;
+    }
+    .img1{
+        width: 270px;
+        height: 270px;
+    }
+    .txt{
+        margin:0;
+    }
   
 }
 @media  (max-width: 1180px) {
@@ -265,3 +287,88 @@ body{
 }
 }
 
+
+
+@media  (max-width: 310px){
+    .columnas{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .img2{
+        height: 250px;
+        width: 250px;
+        margin-left: 0px;
+    
+    }
+    .img3{
+        height: 300px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .img10{
+        width: 140px;
+        height: 240px;
+        margin: 0px;
+    }
+    .idioma{
+        font-size: 28px;
+        
+            margin: 0px;
+            padding-top: 30px;
+        }
+    .about{
+        max-width: 280px;
+        margin: 0px;
+    }
+
+    .img4{
+        height: 360px;
+        width: 40px;
+    }
+    .tres{
+        display: grid;
+        grid-template-columns: 4% 96%;
+
+    }
+    .funcion,.parrfo{
+        margin: 0px;
+    }
+    .parrfo{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .pun{
+        grid-template-columns: 1fr 2fr;
+    }
+    .img10{
+        width: 210px;
+    }
+    .parrfo{
+        max-width: 290px;
+    }
+    .nombre{
+        font-size: 50px
+    }
+    .apellido{
+        font-size: 50px;
+    }
+    .img1{
+        width: 270px;
+        height: 270px;
+    }
+    .txt{
+        margin:0;
+        max-width: 290px;
+    }
+  .a{
+    font-size: 20px;
+  }
+
+
+  .c1titulos{
+    font-size: 35px;
+   max-width: 250px;
+  }
+
+}
