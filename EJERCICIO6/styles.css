@@ -336,7 +336,7 @@ hr {
 .gr {
 	color: black;
 	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 .ctn2 {
@@ -428,7 +428,7 @@ hr {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border: 2px solid rgba(227, 234, 236, 0.247);
-	margin-top: 50px;
+	
 	height: 100PX;
 }
 
@@ -436,7 +436,7 @@ hr {
 .finalito {
 	display: flex;
 	justify-content: center;
-	width: 100%;
+	
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border: 2px solid rgba(227, 234, 236, 0.247);
@@ -526,117 +526,975 @@ hr {
 	gap: 40PX;
 }
 
-
+.gr5{
+	color: black;
+	padding-bottom: 20px;
+}
+.exp1{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.lv{
+	display: flex;
+}
+.circulo{
+	margin-right: 10px;
+}
 
 /* RESPOSIVIDAD */
-
-
 
 
 @media (max-width: 1400px) {
 
 
-section{
-	width: 200px;
-}
-
-.exp{
-	font-size: 15px;
-}
-
-.products{
-	font-size: 40px;
-}
-
-}
-	
-@media (max-width: 1200px) {
 	section{
-		width: 120px;
+		width: 200px;
+		border: 1px solid black;
 	}
-	.b31{
-		font-size: 10px;
-		padding: 0;
+	
+	.exp{
+		font-size: 20px;
 	}
-	.b1{
-		font-size: 10px;
-	}
-	.logo{
-		width: 100px;
-	}
+	
 	.products{
 		font-size: 40px;
 	}
-	.hn1{
-		margin: 20px;
-			}
-			.titulo{
-				font-size: 20px;
-			}
-			.gr{
-				font-size: 16px;
-				padding: 0;
-			}
-			.grilla2{
-				padding-top:0 ;
-			}
-			.ctn3{
-				margin:20px;
-			}
-}
-
+	.d1{
+		position: relative;
+		left: 90px;
+		top: 50px;
 	
-@media (max-width: 1050px) {
 	
-	.logo{
-		width: 70px;
 	}
 	
-	.buscadors{
+	.titulo{
 		font-size: 20px;
 	}
-	.titu,.titu1,.titu2{
+	
+	.grilla{
+		width: 99vw;
+	}
+	
+	.hn1{
+		width: 99vw;
+			}
+	.idioma{
+		padding-left: 130PX;
+	}
+	p{
 		font-size: 15px;
 	}
-	.hn1{
-margin: 0;
+	.colores{
+		width: 90%;
+		display: flex;
+		justify-content: start;
 	}
-
-	.img2{
+			.img2{
+				position: relative;
+				right: 110PX;
+			}
+			.ctn3{
+				border-left: 0;
+				border-right: 0;
+			}
+			.gr {
+				color: black;
+				padding-bottom: 10px;
+				padding-top: 15px;
+			}
+	}
+	
+		
+	@media (max-width: 1200px) {
+		section{
+			width: 120px;
+		}
+		
+		.titu2{
+			padding-right: 50px;
+			
+		}
+		.titu,.titu1,.titu2{
+			font-size: 15px;
+		}
+		.b31{
+			font-size: 10px;
+			padding: 0;
+		}
+		.b1{
+			font-size: 10px;
+		}
+		.logo{
+			width: 100px;
+		}
+		.products{
+			font-size: 40px;
+		}
+		.hn1{
+			margin-left: 0;
+			margin-right: 0;
+				}
+				.titulo{
+					font-size: 20px;
+				}
+				.gr{
+					font-size: 16px;
+					padding: 0;
+				}
+				.grilla2{
+					padding-top:0 ;
+				}
+				.ctn3{
+					margin:0px;
+					border-left: 0;
+					border-right: 0;
+				}
+				.hn1{
+					margin-right: 0;
+					margin-left: 0;
+						}
+	
+						.footer5{
+							font-size: 10px;
+						}
+						.ctn3,.grilla{
+							margin-bottom: 30px;
+						}
+	
+	.grilla{
+		width: 99vw;
+		margin-top: 30px;
+	}
+	
+	.d1{
 		position: relative;
-		right: 60px;
-
+		left: 80px;
+		top: 50px;}
+	
+		.img8{
+			width: 120px;
+			height: 120px;
+		}
+		.img9, .img40{
+			height: 120px;
+			width: 120px;
+		}
+		.titulo{
+			font-size: 16px;
+		}
+		p, .talla{
+			font-size: 15px;
+		}
+	
+		.grilla3{
+			font-size: 15px;
+		}
+	
+		.grilla2{
+			padding-right: 10px;
+		
+		}
+		.b31{
+			padding-right: 4px;
+		}
+		.img2{
+			position: relative;
+			right: 100px;
+		}
+		.idioma{
+			padding-left: 100px;
+		}
+	
+		.week{
+			font-size: 30px;
+		}
+		.b11{
+			width: 280px;
+		}
+		.week1{
+			font-size: 20px;
+			margin-bottom: 30px;
+			margin-top: 10px
+		}
+		.b111{
+			padding-left: 10px;
+		}
+		.reloj11{
+			position: relative;
+			margin-top: 80px;
+		margin-left: 60px;
+		}
+		 .grilla3, .gr{
+			font-size: 14px;
+		}
+	.titu1{
+		padding-left: 10px;
+	}
+	
+		
+	}
+	@media (max-width: 1050px) {
+		.reloj11 {
+			position: relative;
+			margin-top: 60px;
+			margin-left: 40px;
+		}
+		.logo{
+			width: 70px;
+			height: 60px;
+		}
+		.b111{
+			font-size: 10px;
+		}
+		.dh{
+			font-size: 10px;
+		}
+		.week{
+			font-size: 25px;
+			margin-bottom: 15px;
+		}
+		.week1{
+			font-size: 15px;
+		}
+		.buscadors{
+			font-size: 20px;
+		}
+		.titu,.titu1,.titu2{
+			font-size: 15px;
+		}
+		.titu1{
+	padding-left: 0px;
+		}
+		.titu2{
+			padding-right: 35px;
+		}
+		.b11{
+			width: 220px;
+		}
+		.negi{
+			width: 80px;
+			font-size: 12px;
+		}
+		.hn1{
+	margin: 0;
+		}
+		.gr{
+			font-size: 12px;
+			padding-bottom: 5px;
+		}
+	.grilla2{
+		font-size: 15px;
+		padding-right: 10px;
+	}
+		.img2{
+			position: relative;
+			right: 80px;
+			width: 120px;
+	
+		}
+		.contenido2{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			
+		}
+	
+		.d1{
+			position: relative;
+			left: 50px;
+			top: 50px;
+		}
+			.img2{
+				position: relative;
+				right: 85px;
+			}
+			.products{
+				font-size: 30px;
+			}
+			.grilla2{
+				font-size: 30px;
+				
+			}
+			strong{
+				font-size: 12px;
+			}
+			.tallas{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				padding: 0px;
+			}
+			.precios{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+			.blue{
+				width: 60px;
+				height: 30px;
+				font-size: 10px;
+			}
+			.precio{
+				width: 35px;
+				display: flex;
+				justify-content: center;
+			}
+			.grilla3{
+	  font-size: 12px;
+			}
+			.fotter5,.fotter4,.fotter3,.fotter2,.fotter1,p{
+				font-size: 12px;
+			}
+			.img16{
+				width: 130px;
+				
+			}
+			section{
+				border: 1px solid black;
+			}
+			.exp{
+				font-size: 15px;
+			}
+			.load{
+				width: 120px;
+				
+			}
+			.boton2{
+				display: flex;
+				justify-content: end;
+				position: relative;
+				left: 60px;
+			}
+	}
+	
+	
+	@media (max-width: 800px) {
+		
+		.logo{
+			width: 60px;
+			height: 50px;
+		}
+		.titu,.titu1,.titu2{
+			font-size: 10px;
+		}
+		.buscadors{
+			font-size: 20px;
+		}
+		.titu,.titu1,.titu2{
+			font-size: 12px;
+		}
+		.week{
+			font-size: 30px;
+		}
+		.tallas{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr ;
+			padding: 0px;
+		}
+	.reloj11{
+		position: relative;
+		margin-top: 40px;
+		margin-left: 20px;
+	}
+		.week1{
+			font-size: 20px;
+		}
+		.hn1{
+	margin: 0;
+		}
+		.exp{
+			font-size: 14px;
+			max-width: 80px;
+		}
+	
+		.img2{
+			position: relative;
+			right: 70px;
+			top:45px;
+			width: 90px;
+		}
+		.week1{
+			font-size: 15px;
+		}
+		.week{
+			font-size: 25px;
+			margin: 0;
+		}
+		.explorer{
+			height: 150px;
+		}
+	.products{
+		font-size: 20px;
+	}
+	.d12{
+		font-size: 12px;
+	}
+		.d1 {
+			position: relative;
+			left: 40px;
+			top: 50px;
+		}
+		section{
+			width: 90px;
+			border: 1px solid black;
+		}
+		.b31{
+			padding: 0;
+			text-align: 8px;
+		}
+		i{
+			font-size: 15px;
+		}
+		.idioma{
+			padding-left: 80px;
+		}
+		.titu2{
+			padding-right: 10px;
+		}
+	 .cards{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	 }
+	 .grilla{
+		padding: 0px;
+	 }
+	
+	.img9{
+		width: 130px;
+	}
+	 .img12{
+		width: 70px;
+		height: 70px;
+	 }
+	.grilla1{
+		display: flex;
+		justify-content: center;
+	}
+	.img8,.img40{
+		width: 100px;
+		height: 100px;
+	}
+	.forma{
+		height: 170px;
+	}
+	
+	.boton2 {
+		display: flex
+	;
+		justify-content: end;
+		position: relative;
+		left: 40px;
+	}
+	}
+	
+	
+	
+	
+		@media (max-width: 685px) {
+	.logo{
+		width: 50px;
+		height: 40px;
+	}
+	.hn1{
+		height: 120px;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.exp{
+		font-size: 12px;
+	}
+	section{
+		width: 120px;
+		height: 35px;
+	}            
+	.d12{
+		font-size: 15px;
+	}
+	.products{
+		font-size: 20px;
+	}
+	.img2{
+		width: 90PX;
+		height: 90PX;
+		position: relative;
+		right: 90PX;
+		TOP:30PX
+	}
+	.contenido{
+		display: grid;
+		grid-template-columns: 1fr 2fr ;
+	}
+	.d1 {
+        position: relative;
+        left: 10PX;
+        top: 35px;
+    }
+	.reloj11{
+		margin-left: 20PX;
+	}
+	.WEEK{
+		font-size: 20px;
 	}
 	.contenido2{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
-}
-
-
-@media (max-width: 800px) {
-	
-	.logo{
-		width: 70px;
-	}
-	
-	.buscadors{
-		font-size: 20px;
-	}
-	.titu,.titu1,.titu2{
-		font-size: 15px;
-	}
-	.hn1{
-margin: 0;
-	}
-
-	.img2{
-		position: relative;
-		right: 60px;
-
-	}
-	.contenido2{
+	.contenido{
 		display: grid;
-		grid-template-columns:  1fr;
+		grid-template-columns: 1fr 2fr;
 	}
+	
+	.finalfu,.footer1,.relojes, .cards,.precios,.tallas,.contenido,.trade{
+		width: 85%;
+	}
+	.boton2{
+		margin: 0;
+		display: flex;
+	justify-content: center;
+	position: relative;
+	right: 0;
+	left: 0;
+	}
+	.load{
+		margin-bottom: 20px;
+	}
+	.grilla1{
+		display: flex;
+		
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+			}
+			@media (max-width: 600px) {
+				.d12 {
+					font-size: 12px;
+				}
+				
+				.gg .fa-brands,
+.final11 .fa-brands {
+  font-size: 10px;
 }
+.footer2 .fa-solid {
+	font-size: 12px;
+	margin-right: 5px; 
+  }
+  .cards .fa-solid {
+	font-size: 15px;
+	margin-right: 6px; /* opcional para darle algo de espacio */
+  }
+  
+  
+				  
+				.img2 {
+					width: 80PX;
+					height: 80PX;
+					position: relative;
+					right: 60PX;
+					TOP: 35PX;
+				}
+				.idioma {
+					padding-left: 55px;
+				}
+				.ingresar {
+					
+					padding-right: 40px;
+				}
+			    .img8, .img40 {
+					width: 120px;
+					height: 120px;
+				}
+				.d1{
+					position: relative;
+					top: 40px;
+				}
+				.fotter3{
+					margin-bottom: 7px;
+				}
+				.logo{
+					width: 60px;
+					height: 50px;
+					
+				}
+				.final1,.final11{
+					font-size: 10px;
+				}
+				.gf{
+					font-size: 10px;
+					margin-left: 10px;
+				}
+			
+				.logo1{
+				   display: flex;
+				   justify-content: center;
+				}
+				section{
+					width: 110px;
+					height: 30px;
+					display: flex;
+					justify-content: center;
+					text-align: center;
+				}
+				.exp{
+				   display: flex;
+				  
+				   font-size: 11px;
+				   margin-right: 0px;
+				}
+				.colores{
+					width: 55%;
+				}
+	
+				.talla{
+					width: 60px;
+				}
+				.footer1,.relojes, .cards,.trade{
+					width: 95%;
+				}
+				.tallas{
+					width: 50%;
+				}
+				.circulo{
+					margin-bottom: 10px;
+				}
+				.blue {
+					width: 80px;
+					height: 30px;
+					margin-bottom: 20px;
+				}
+				.contenido2{
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					padding-left: 60px;
+				}
+				.boton2{
+					margin: 0;
+					display: flex;
+					justify-content: start;
+					padding: 0;
+					margin-bottom: 20px;
+				}
+				.reloj{
+					font-size: 10px;
+					
+				}
+				.week{
+					font-size: 20px;
+					
+				}
+				.grilla1{
+					margin-bottom: 10px
+				}
+				.b11 {
+					width: 180px;
+				}
+				.negi {
+					width: 60px;
+					font-size: 10px;
+					height: 33px;
+				}
+				.load{
+					margin: 50px;
+				}
+			.formas{
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			 .precios{
+				width: 50%;
+				
+			 }
+			 .ctn3{
+	display: flex;
+	justify-content: center;
+			 }
+			 .precio{
+				width: 50px;
+			 }
+	
+	.trade{
+		   display: grid;
+		   grid-template-columns: 1fr 2fr  ;
+		   
+	}
+	.footer1{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.fotter4{
+		margin-top: 20px;
+	}
+	.contenido{
+		display: grid;
+		grid-template-columns: 1fr ;
+	}
+	.img40{
+		height: 120px;
+	}
+	.week1 {
+        font-size: 13px;
+    }
+.footer1{
+	text-align: center;
+}
+.gr5 {
+	padding-bottom: 0px;
+	margin-top: 20px;
+}
+.buscadors{
+	font-size: 15px;
+}
+.buscador {
+    font-size: 22px;
+    display: flex
+;
+    justify-content: center;
+}
+.products {
+	font-size: 17px;
+}
+			}
+
+			@media (max-width: 463px) {
+				.finalito{
+					width: 95%;
+				}
+				.hh{
+					font-size: 10px;
+					margin-right: 3px;
+				}
+			}
+
+
+
+			@media (max-width: 410px) {
+
+				.trade{
+					display: grid;
+					grid-template-columns: 1fr  ;
+					
+			 }
+			 .buscador{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			 }
+.hn1{
+	height: 150px;
+}
+.buscadors{
+	margin-left: 25px;
+}
+.load {
+
+	margin-left: 25px;
+}
+.boton2{
+	margin: 0px;
+}
+.img16 {
+	width: 110px;
+}
+.cards,.footer1{
+	width: 85%;
+}
+.img2 {
+	width: 50PX;
+	height: 50PX;
+	position: relative;
+	right: 40PX;
+	TOP: 40PX;
+}
+.d1 {
+	position: relative;
+	left: 10PX;
+	top: 30px;
+	
+}
+.explorer {
+	height: 120px;
+}
+section{
+	width: 120px;
+}
+.products {
+	font-size: 15px;
+}
+			}
+
+			@media (max-width: 350px) {
+
+				.finalito {
+					width: 90%;
+					display: flex
+			;
+					justify-content: center;
+				}
+				.hn1 {
+					height: 150px;
+					margin: 0px;
+				}
+				.contenido1{
+					display: flex;
+					justify-content: left;
+					flex-direction: column;
+					width: 80%;
+				}
+				.products {
+					font-size: 14px;
+				}
+				.d12 {
+					font-size: 10px;
+				}
+				.d1 {
+					position: relative;
+					left: 10PX;
+					top: 40px;
+				}
+				.exp{
+					margin: 0;
+				}
+				.week{
+					font-size: 15px
+				}
+				.contenido2{
+					padding: 35px;
+				}
+
+				
+				  .gg .fa-brands,
+				  .final11 .fa-brands {
+					font-size: 8px;
+				  }
+				  .gf {
+					font-size: 8px;
+					margin-left: 5px;
+				}
+				.hh {
+					font-size: 8px;
+					margin-right: 3px;
+				}
+				.week1 {
+					font-size: 10px;
+				}
+				strong {
+					font-size: 10px;
+				}
+				.grilla3 {
+					font-size: 9px;
+				}
+				.fotter4 {
+					margin-top: 20px;
+					display: flex;
+			;
+				}
+				.gr5 {
+					padding-bottom: 0px;
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+				.titulo {
+					font-size: 13px;
+				}
+				.negi {
+					width: 40px;
+					font-size: 8px;
+					height: 27px;
+				}
+				.reloj i {
+					font-size: 8px;
+				  }
+				  
+				.b11 {
+					width: 150px;
+				}
+				.b11 .dh i {
+					font-size: 10px;
+				  }
+				  .b111{
+					font-size: 10px;
+				  }
+				  
+			}
+			@media (max-width: 350px) {
+				.d1 {
+					position: relative;
+					left: 0px;
+					top: 20px;
+				}
+				.products {
+					font-size: 12px;
+				}
+				.d12 {
+					font-size: 8px;
+				}
+				.img2 {
+					width: 50PX;
+					height: 50PX;
+					position: relative;
+					right: 30PX;
+					TOP: 25PX;
+				}
+				.explorer {
+					height: 100px;
+				}
+				.idioma {
+					padding-left: 20px;
+				}
+				.ingresar {
+					padding-right: 20px;
+				}
+				.titu,.titu1,.titu2{
+					font-size: 10px;
+				}
+				.contenedito {
+					display: flex
+				;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					padding-top: 40px;
+				}
+				.fotter4 {
+					margin-top: 20px;
+					display: flex
+			;
+					justify-content: center;
+					margin-bottom: 7px;
+				}
+				.fotter5 {
+					margin-top: 5px;
+					margin-bottom: 7px;
+				}
+
+				.gr {
+					font-size: 15px;
+					padding-bottom: 5px;
+				}
+				.contenido2 {
+					padding: 35px;
+					
+					padding-bottom: 10px;
+				}
+				.nrg {
+					text-align: left;
+					padding-top: 20px;
+					font-size: 10px;
+				}
+				.img18 {
+					width: 35px;
+					margin-top: 2px;
+				}
+				.img9 {
+					width: 100px;
+					height: 90px;
+				}
+				.img8, .img40 {
+					width: 100px;
+					height: 100px;
+				}
+				.footer1 {
+					display: grid
+			;
+					grid-template-columns: 1fr;
+				}
+			}
