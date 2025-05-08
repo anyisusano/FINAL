@@ -9,6 +9,9 @@
 	justify-content: space-between;
 	border: 2px solid black;
 }
+.gris {
+	color: gray;
+}
 
 .titu,
 .titu1,
@@ -36,9 +39,10 @@
 	box-sizing: content-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 .logo {
-	width: 120px;
-	height: 100px;
+	width: 100px;
+	height: 80px;
 }
 
 .idioma,
@@ -51,10 +55,6 @@
 	align-items: center;
 	width: 80%;
 }
-
-
-
-
 
 .buscadors {
 	font-size: 25px;
@@ -75,7 +75,7 @@
 	padding-left: 100px;
 }
 .trade {
-	height: 110px;
+	height: 90px;
 }
 .buscador {
 	font-size: 22px;
@@ -92,7 +92,7 @@
 }
 section {
 	border: 2px solid black;
-      width: 300px;
+	width: 300px;
 	display: flex;
 	height: 40px;
 	text-align: center;
@@ -103,7 +103,7 @@ section {
 	font-size: 15px;
 }
 
-.b31{
+.b31 {
 	font-size: 15px;
 	padding-left: 10px;
 }
@@ -138,7 +138,7 @@ section {
 }
 
 .d11,
-.d12 {
+.shops {
 	color: rgb(0, 153, 255);
 }
 
@@ -170,7 +170,7 @@ section {
 	gap: 18px;
 	width: 80%;
 }
-.exp{
+.exp {
 	font-size: 20px;
 }
 
@@ -353,8 +353,9 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	width: 80%;
+	border-radius: 5px;
 }
-	/* display: grid;
+/* display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 70px;
 } */
@@ -364,7 +365,7 @@ hr {
 	width: 700px;
 	margin-top: 100px;
 	margin-left: 80px;
-} 
+}
 .blue1 {
 	display: flex;
 	justify-content: end;
@@ -392,7 +393,8 @@ hr {
 	grid-template-columns: 1fr 1fr 1fr;
 }
 .img18 {
-	width: 50px;
+	width: 40px;
+	margin-top: 6px;
 }
 .fotter3 {
 	margin-bottom: 10px;
@@ -421,22 +423,20 @@ hr {
 	width: 80%;
 }
 
-.hn1{
+.hn1 {
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	border: 2px solid rgba(227, 234, 236, 0.247);
-	
-	height: 100PX;
+	height: 100px;
 }
-
 
 .finalito {
 	display: flex;
 	justify-content: center;
-	
+
 	padding-top: 20px;
 	padding-bottom: 20px;
 	border: 2px solid rgba(227, 234, 236, 0.247);
@@ -451,14 +451,12 @@ hr {
 	display: flex;
 }
 
-
 /* RELOJ//////////////////////////////////////////////////////////////////////////////// */
 .reloj {
 	color: rgb(7, 126, 182);
 	text-align: start;
 	margin-bottom: 10px;
 }
-
 
 .b11 {
 	width: 300px;
@@ -482,7 +480,7 @@ hr {
 }
 .week1 {
 	margin-top: 20px;
-	margin-bottom: 35PX;
+	margin-bottom: 35px;
 }
 .week {
 	margin-bottom: 20px;
@@ -518,987 +516,1235 @@ hr {
 	margin-right: 5px;
 }
 
-
-
-
-.GJ{
+.GJ {
 	display: flex;
-	gap: 40PX;
+	gap: 40px;
 }
 
-.gr5{
+.gr5 {
 	color: black;
 	padding-bottom: 20px;
 }
-.exp1{
+.exp1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.lv{
+.lv {
 	display: flex;
 	margin-bottom: 11px;
 }
-.circulo{
+.circulo {
 	margin-right: 10px;
 }
 
 /* RESPOSIVIDAD */
 
-
 @media (max-width: 1400px) {
-
-
-	section{
+	section {
 		width: 200px;
 		border: 1px solid black;
 	}
-	
-	.exp{
-		font-size: 20px;
+
+	.exp {
+		font-size: 17px;
 	}
-	
-	.products{
+
+	.products {
 		font-size: 40px;
 	}
-	.d1{
+	.d1 {
 		position: relative;
 		left: 90px;
 		top: 50px;
-	
-	
 	}
-	
-	.titulo{
+	.k {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mover {
+		position: relative;
+		top: 10px;
+		right: 90px;
+	}
+	.shops {
+		font-size: 18px;
+	}
+
+	.titulo {
 		font-size: 20px;
 	}
-	
-	.grilla{
+
+	.grilla {
 		width: 99vw;
 	}
-	
-	.hn1{
+
+	.hn1 {
 		width: 99vw;
-			}
-	.idioma{
-		padding-left: 130PX;
 	}
-	p{
+	.idioma {
+		padding-left: 130px;
+	}
+	p {
 		font-size: 15px;
 	}
-	.colores{
+	.colores {
 		width: 90%;
 		display: flex;
 		justify-content: start;
 	}
-			.img2{
-				position: relative;
-				right: 110PX;
-			}
-			.ctn3{
-				border-left: 0;
-				border-right: 0;
-			}
-			.gr {
-				color: black;
-				padding-bottom: 10px;
-				padding-top: 15px;
-			}
-				.titu,.titu1,.titu2{
-			font-size: 15px;
-		}
+	.img2 {
+		position: relative;
+		right: 110px;
 	}
-	
-		
-	@media (max-width: 1200px) {
-		section{
-			width: 120px;
-		}
-		
-		.titu2{
-			padding-right: 50px;
-			
-		}
-		.titu,.titu1,.titu2{
-			font-size: 15px;
-		}
-		.b31{
-			font-size: 10px;
-			padding: 0;
-		}
-		.b1{
-			font-size: 10px;
-		}
-		.logo{
-			width: 100px;
-		}
-		.products{
-			font-size: 40px;
-		}
-		.hn1{
-			margin-left: 0;
-			margin-right: 0;
-				}
-				.titulo{
-					font-size: 20px;
-				}
-				.gr{
-					font-size: 16px;
-					padding: 0;
-				}
-				.grilla2{
-					padding-top:0 ;
-				}
-				.ctn3{
-					margin:0px;
-					border-left: 0;
-					border-right: 0;
-				}
-				.hn1{
-					margin-right: 0;
-					margin-left: 0;
-						}
-	
-						.footer5{
-							font-size: 10px;
-						}
-						.ctn3,.grilla{
-							margin-bottom: 30px;
-						}
-	
-	.grilla{
+	.ctn3 {
+		border-left: 0;
+		border-right: 0;
+	}
+	.gr {
+		color: black;
+		padding-bottom: 15px;
+		padding-top: 12px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 15px;
+	}
+	.buscadors {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.d1 {
+		position: relative;
+		left: 90px;
+		top: 50px;
+	}
+	.k {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mover {
+		position: relative;
+		top: 10px;
+		right: 90px;
+	}
+	.shops {
+		font-size: 18px;
+	}
+	section {
+		width: 120px;
+	}
+
+	.titu2 {
+		padding-right: 50px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 15px;
+	}
+	.b31 {
+		font-size: 10px;
+		padding: 0;
+	}
+	.b1 {
+		font-size: 10px;
+	}
+	.logo {
+		width: 100px;
+	}
+	.products {
+		font-size: 40px;
+	}
+	.hn1 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.titulo {
+		font-size: 20px;
+	}
+	.gr {
+		font-size: 16px;
+		padding: 0;
+	}
+	.grilla2 {
+		padding-top: 0;
+	}
+	.ctn3 {
+		margin: 0px;
+		border-left: 0;
+		border-right: 0;
+	}
+	.hn1 {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.footer5 {
+		font-size: 10px;
+	}
+	.ctn3,
+	.grilla {
+		margin-bottom: 30px;
+	}
+
+	.grilla {
 		width: 99vw;
 		margin-top: 30px;
 	}
-	
-	.d1{
+
+	.d1 {
 		position: relative;
 		left: 80px;
-		top: 50px;}
-	
-		.img8{
-			width: 120px;
-			height: 120px;
-		}
-		.img9, .img40{
-			height: 120px;
-			width: 120px;
-		}
-		.titulo{
-			font-size: 16px;
-		}
-		p, .talla{
-			font-size: 15px;
-		}
-	
-		.grilla3{
-			font-size: 15px;
-		}
-	
-		.grilla2{
-			padding-right: 10px;
-		
-		}
-		.b31{
-			padding-right: 4px;
-		}
-		.img2{
-			position: relative;
-			right: 100px;
-		}
-		.idioma{
-			padding-left: 100px;
-		}
-	
-		.week{
-			font-size: 30px;
-		}
-		.b11{
-			width: 280px;
-		}
-		.week1{
-			font-size: 20px;
-			margin-bottom: 30px;
-			margin-top: 10px
-		}
-		.b111{
-			padding-left: 10px;
-		}
-		.reloj11{
-			position: relative;
-			margin-top: 80px;
-		margin-left: 60px;
-		}
-		 .grilla3, .gr{
-			font-size: 14px;
-		}
-	.titu1{
-		padding-left: 10px;
+		top: 50px;
 	}
-	
-		
+
+	.img8 {
+		width: 120px;
+		height: 120px;
 	}
-	@media (max-width: 1050px) {
-		.reloj11 {
-			position: relative;
-			margin-top: 60px;
-			margin-left: 40px;
-		}
-		.logo{
-			width: 70px;
-			height: 60px;
-		}
-		.b111{
-			font-size: 10px;
-		}
-		.dh{
-			font-size: 10px;
-		}
-		.week{
-			font-size: 25px;
-			margin-bottom: 15px;
-		}
-		.week1{
-			font-size: 15px;
-		}
-		.buscadors{
-			font-size: 20px;
-		}
-		.titu,.titu1,.titu2{
-			font-size: 15px;
-		}
-		.titu1{
-	padding-left: 0px;
-		}
-		.titu2{
-			padding-right: 35px;
-		}
-		.b11{
-			width: 220px;
-		}
-		.negi{
-			width: 80px;
-			font-size: 12px;
-		}
-		.hn1{
-	margin: 0;
-		}
-		.gr{
-			font-size: 12px;
-			padding-bottom: 5px;
-		}
-	.grilla2{
+	.img9,
+	.img40 {
+		height: 120px;
+		width: 120px;
+	}
+	.titulo {
+		font-size: 16px;
+	}
+	p,
+	.talla {
 		font-size: 15px;
+	}
+
+	.grilla3 {
+		font-size: 15px;
+	}
+
+	.grilla2 {
 		padding-right: 10px;
 	}
-		.img2{
-			position: relative;
-			right: 80px;
-			width: 120px;
-	
-		}
-		.contenido2{
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			
-		}
-	
-		.d1{
-			position: relative;
-			left: 50px;
-			top: 50px;
-		}
-			.img2{
-				position: relative;
-				right: 85px;
-			}
-			.products{
-				font-size: 30px;
-			}
-			.grilla2{
-				font-size: 30px;
-				
-			}
-			strong{
-				font-size: 12px;
-			}
-			.tallas{
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-				padding: 0px;
-			}
-			.precios{
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-			}
-			.blue{
-				width: 60px;
-				height: 30px;
-				font-size: 10px;
-			}
-			.precio{
-				width: 35px;
-				display: flex;
-				justify-content: center;
-			}
-			.grilla3{
-	  font-size: 12px;
-			}
-			.fotter5,.fotter4,.fotter3,.fotter2,.fotter1,p{
-				font-size: 12px;
-			}
-			.img16{
-				width: 130px;
-				
-			}
-			section{
-				border: 1px solid black;
-			}
-			.exp{
-				font-size: 15px;
-			}
-			.load{
-				width: 120px;
-				
-			}
-			.boton2{
-				display: flex;
-				justify-content: end;
-				position: relative;
-				left: 60px;
-			}
+	.b31 {
+		padding-right: 4px;
 	}
-	
-	
-	@media (max-width: 800px) {
-		
-		.logo{
-			width: 60px;
-			height: 50px;
-		}
-		.titu,.titu1,.titu2{
-			font-size: 10px;
-		}
-		.buscadors{
-			font-size: 20px;
-		}
-		.titu,.titu1,.titu2{
-			font-size: 12px;
-		}
-		.week{
-			font-size: 30px;
-		}
-		.tallas{
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr ;
-			padding: 0px;
-		}
-	.reloj11{
+	.img2 {
+		position: relative;
+		right: 100px;
+	}
+	.idioma {
+		padding-left: 100px;
+	}
+
+	.week {
+		font-size: 30px;
+	}
+	.b11 {
+		width: 280px;
+	}
+	.week1 {
+		font-size: 20px;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+	.b111 {
+		padding-left: 10px;
+	}
+	.reloj11 {
+		position: relative;
+		margin-top: 80px;
+		margin-left: 60px;
+	}
+	.grilla3,
+	.gr {
+		font-size: 14px;
+	}
+	.titu1 {
+		padding-left: 10px;
+	}
+}
+@media (max-width: 1050px) {
+	.trade {
+		height: 80px;
+	}
+	.hn1 {
+		margin: 0;
+		height: 80px;
+	}
+	.d1 {
+		position: relative;
+		left: 90px;
+		top: 50px;
+	}
+	.k {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mover {
+		position: relative;
+		top: 10px;
+		right: 40px;
+	}
+	.shops {
+		font-size: 18px;
+	}
+	.reloj11 {
+		position: relative;
+		margin-top: 60px;
+		margin-left: 40px;
+	}
+	.logo {
+		width: 70px;
+		height: 60px;
+	}
+	.b111 {
+		font-size: 15px;
+	}
+	.dh {
+		font-size: 10px;
+	}
+	.week {
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	.week1 {
+		font-size: 15px;
+	}
+	.buscadors {
+		font-size: 20px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 15px;
+	}
+	.titu1 {
+		padding-left: 0px;
+	}
+	.titu2 {
+		padding-right: 35px;
+	}
+	.b11 {
+		width: 260px;
+	}
+	.negi {
+		width: 90px;
+		font-size: 14px;
+	}
+	.hn1 {
+		margin: 0;
+	}
+	.gr {
+		font-size: 12px;
+		padding-bottom: 5px;
+	}
+	.grilla2 {
+		font-size: 37px;
+		padding-right: 24px;
+	}
+	.img2 {
+		position: relative;
+		right: 80px;
+		width: 120px;
+	}
+	.contenido2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.d1 {
+		position: relative;
+		left: 50px;
+		top: 50px;
+	}
+	.img2 {
+		position: relative;
+		right: 85px;
+	}
+	.products {
+		font-size: 30px;
+	}
+	.grilla2 {
+		font-size: 30px;
+	}
+	strong {
+		font-size: 13px;
+	}
+	.tallas {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 0px;
+	}
+	.grilla2 {
+		font-size: 37px;
+	}
+	.precios {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.blue {
+		width: 60px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.precio {
+		width: 35px;
+		display: flex;
+		justify-content: center;
+	}
+	.grilla3 {
+		font-size: 13px;
+	}
+	.fotter5,
+	.fotter4,
+	.fotter3,
+	.fotter2,
+	.fotter1,
+	p {
+		font-size: 14px;
+	}
+	.img16 {
+		width: 130px;
+	}
+	section {
+		border: 1px solid black;
+	}
+	.exp {
+		font-size: 15px;
+	}
+	.load {
+		width: 120px;
+	}
+	.boton2 {
+		display: flex;
+		justify-content: end;
+		position: relative;
+		left: 60px;
+	}
+}
+
+@media (max-width: 886px) {
+	.k {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mover {
+		position: relative;
+		top: 10px;
+		right: 1px;
+	}
+	.blue2 {
+		background-color: rgb(7, 126, 182);
+		margin-top: 20px;
+		border: 0;
+		border-radius: 5px;
+		color: white;
+		padding: 4px;
+		width: 60px;
+		font-size: 11px;
+	}
+	.shops {
+		font-size: 18px;
+	}
+	strong {
+		font-size: 14px;
+	}
+	.reloj {
+		color: rgb(7, 126, 182);
+		text-align: start;
+		margin-bottom: 10px;
+		font-size: 29px;
+	}
+	.logo {
+		width: 60px;
+		height: 50px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 10px;
+	}
+	.buscadors {
+		font-size: 20px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 12px;
+	}
+	.week {
+		font-size: 30px;
+	}
+	.tallas {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 0px;
+	}
+	.reloj11 {
 		position: relative;
 		margin-top: 40px;
 		margin-left: 20px;
 	}
-		.week1{
-			font-size: 20px;
-		}
-		.hn1{
-	margin: 0;
-		}
-		.exp{
-			font-size: 14px;
-			max-width: 80px;
-		}
-	
-		.img2{
-			position: relative;
-			right: 70px;
-			top:45px;
-			width: 90px;
-		}
-		.week1{
-			font-size: 15px;
-		}
-		.week{
-			font-size: 25px;
-			margin: 0;
-		}
-		.explorer{
-			height: 150px;
-		}
-	.products{
+	.week1 {
 		font-size: 20px;
 	}
-	.d12{
-		font-size: 12px;
+	.hn1 {
+		margin: 0;
 	}
-		.d1 {
-			position: relative;
-			left: 40px;
-			top: 50px;
-		}
-		section{
-			width: 90px;
-			border: 1px solid black;
-		}
-		.b31{
-			padding: 0;
-			text-align: 8px;
-		}
-		i{
-			font-size: 15px;
-		}
-		.idioma{
-			padding-left: 80px;
-		}
-		.titu2{
-			padding-right: 10px;
-		}
-	 .cards{
+	.exp {
+		font-size: 14px;
+		max-width: 80px;
+	}
+
+	.img2 {
+		position: relative;
+		right: 70px;
+		top: 45px;
+		width: 90px;
+	}
+	.week1 {
+		font-size: 15px;
+	}
+	.week {
+		font-size: 30px;
+		margin: 0;
+	}
+	.explorer {
+		height: 150px;
+	}
+	.products {
+		font-size: 20px;
+	}
+
+	.d1 {
+		position: relative;
+		left: 40px;
+		top: 50px;
+	}
+	section {
+		width: 90px;
+		border: 1px solid black;
+	}
+	.b31 {
+		padding: 0;
+		text-align: 8px;
+	}
+	i {
+		font-size: 15px;
+	}
+	.idioma {
+		padding-left: 80px;
+	}
+	.titu2 {
+		padding-right: 10px;
+	}
+	.cards {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-	 }
-	 .grilla{
+	}
+	.grilla {
 		padding: 0px;
-	 }
-	
-	.img9{
+	}
+
+	.img9 {
 		width: 130px;
 	}
-	 .img12{
+	.img12 {
 		width: 70px;
 		height: 70px;
-	 }
-	.grilla1{
+	}
+	.grilla1 {
 		display: flex;
 		justify-content: center;
 	}
-	.img8,.img40{
+	.img8,
+	.img40 {
 		width: 100px;
 		height: 100px;
 	}
-	.forma{
+	.forma {
 		height: 170px;
 	}
-	
+
 	.boton2 {
-		display: flex
-	;
+		display: flex;
 		justify-content: end;
 		position: relative;
 		left: 40px;
 	}
+}
+
+@media (max-width: 800px) {
+	.exp {
+		font-size: 12px;
 	}
-	
-	
-	
-	
-		@media (max-width: 685px) {
-	.logo{
+}
+
+@media (max-width: 710px) {
+	.trade {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	.logo {
 		width: 50px;
 		height: 40px;
 	}
-	.hn1{
+	.hn1 {
 		height: 120px;
 		padding: 0;
 		margin-bottom: 10px;
 	}
-	.exp{
+	.exp {
 		font-size: 12px;
 	}
-	section{
+	section {
 		width: 120px;
 		height: 35px;
-	}            
-	.d12{
+	}
+	.d12 {
 		font-size: 15px;
 	}
-	.products{
+	.products {
 		font-size: 20px;
 	}
-	.img2{
-		width: 90PX;
-		height: 90PX;
+	.img2 {
+		width: 90px;
+		height: 90px;
 		position: relative;
-		right: 90PX;
-		TOP:30PX
+		right: 90px;
+		top: 30px;
 	}
-	.contenido{
-		display: grid;
-		grid-template-columns: 1fr 2fr ;
-	}
-	.d1 {
-        position: relative;
-        left: 10PX;
-        top: 35px;
-    }
-	.reloj11{
-		margin-left: 20PX;
-	}
-	.WEEK{
-		font-size: 20px;
-	}
-	.contenido2{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.contenido{
+	.contenido {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 	}
-	
-	.finalfu,.footer1,.relojes, .cards,.precios,.tallas,.contenido,.trade{
-		width: 85%;
+	.d1 {
+		position: relative;
+		left: 10px;
+		top: 35px;
 	}
-	.boton2{
-		margin: 0;
-		display: flex;
-	justify-content: center;
-	position: relative;
-	right: 0;
-	left: 0;
+	.reloj11 {
+		margin-left: 20px;
 	}
-	.load{
-		margin-bottom: 20px;
+	.WEEK {
+		font-size: 20px;
 	}
-	.grilla1{
-		display: flex;
-		
-		justify-content: center;
-		margin-bottom: 15px;
-	}
-			}
-			@media (max-width: 600px) {
-				.d12 {
-					font-size: 12px;
-				}
-				
-				.gg .fa-brands,
-.final11 .fa-brands {
-  font-size: 10px;
-}
-.footer2 .fa-solid {
-	font-size: 12px;
-	margin-right: 5px; 
-  }
-  .cards .fa-solid {
-	font-size: 15px;
-	margin-right: 6px; /* opcional para darle algo de espacio */
-  }
-  
-  
-				  
-				.img2 {
-					width: 80PX;
-					height: 80PX;
-					position: relative;
-					right: 60PX;
-					TOP: 35PX;
-				}
-				.idioma {
-					padding-left: 55px;
-				}
-				.ingresar {
-					
-					padding-right: 40px;
-				}
-			    .img8, .img40 {
-					width: 120px;
-					height: 120px;
-				}
-				.d1{
-					position: relative;
-					top: 40px;
-				}
-				.fotter3{
-					margin-bottom: 7px;
-				}
-				.logo{
-					width: 60px;
-					height: 50px;
-					
-				}
-				.final1,.final11{
-					font-size: 10px;
-				}
-				.gf{
-					font-size: 10px;
-					margin-left: 10px;
-				}
-			
-				.logo1{
-				   display: flex;
-				   justify-content: center;
-				}
-				section{
-					width: 110px;
-					height: 30px;
-					display: flex;
-					justify-content: center;
-					text-align: center;
-				}
-				.exp{
-				   display: flex;
-				  
-				   font-size: 11px;
-				   margin-right: 0px;
-				}
-				.colores{
-					width: 55%;
-				}
-	
-				.talla{
-					width: 60px;
-				}
-				.footer1,.relojes, .cards,.trade{
-					width: 95%;
-				}
-				.tallas{
-					width: 50%;
-				}
-				.circulo{
-					margin-bottom: 10px;
-				}
-				.blue {
-					width: 80px;
-					height: 30px;
-					margin-bottom: 20px;
-				}
-				.contenido2{
-					display: flex;
-					justify-content: center;
-					flex-direction: column;
-					padding-left: 60px;
-				}
-				.boton2{
-					margin: 0;
-					display: flex;
-					justify-content: start;
-					padding: 0;
-					margin-bottom: 20px;
-				}
-				.reloj{
-					font-size: 10px;
-					
-				}
-				.week{
-					font-size: 20px;
-					
-				}
-				.grilla1{
-					margin-bottom: 10px
-				}
-				.b11 {
-					width: 180px;
-				}
-				.negi {
-					width: 60px;
-					font-size: 10px;
-					height: 33px;
-				}
-				.load{
-					margin: 50px;
-				}
-			.formas{
-				width: 80%;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-			}
-			 .precios{
-				width: 50%;
-				
-			 }
-			 .ctn3{
-	display: flex;
-	justify-content: center;
-			 }
-			 .precio{
-				width: 50px;
-			 }
-	
-	.trade{
-		   display: grid;
-		   grid-template-columns: 1fr 2fr  ;
-		   
-	}
-	.footer1{
+	.contenido2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
-	
-	.fotter4{
+	.contenido {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.finalfu,
+	.footer1,
+	.relojes,
+	.cards,
+	.precios,
+	.tallas,
+	.contenido,
+	.trade {
+		width: 85%;
+	}
+	.boton2 {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		right: 0;
+		left: 0;
+	}
+	.load {
+		margin-bottom: 20px;
+	}
+	.grilla1 {
+		display: flex;
+
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 600px ) {
+	.logo {
+		width: 50px;
+		height: 40px;
+	}
+	.hn1 {
+		height: 120px;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	.exp {
+		font-size: 12px;
+	}
+	section {
+		width: 120px;
+		height: 35px;
+	}
+	.d12 {
+		font-size: 18px;
+	}
+	.k {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.mover {
+		position: relative;
+		top: 10px;
+		right: 20px;
+	}
+	p {
+		font-size: 17px;
+	}
+	.blue2 {
+		background-color: rgb(7, 126, 182);
+		margin-top: 20px;
+		border: 0;
+		border-radius: 5px;
+		color: white;
+		padding: 4px;
+		width: 80px;
+		font-size: 11px;
+	}
+
+	.gg .fa-brands,
+	.final11 .fa-brands {
+		font-size: 14px;
+	}
+	.footer2 .fa-solid {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+	.cards .fa-solid {
+		font-size: 30px;
+		margin-right: 6px;
+	}
+
+	.img2 {
+		width: 80px;
+		height: 80px;
+		position: relative;
+		right: 60px;
+		top: 35px;
+	}
+	.idioma {
+		padding-left: 55px;
+	}
+	.ingresar {
+		padding-right: 40px;
+	}
+	.img8,
+	.img40 {
+		width: 120px;
+		height: 120px;
+	}
+	.d1 {
+		position: relative;
+		top: 40px;
+	}
+	.fotter3 {
+		margin-bottom: 7px;
+	}
+	.logo {
+		width: 60px;
+		height: 50px;
+	}
+	.final1,
+	.final11 {
+		font-size: 10px;
+	}
+	.gf {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+.gg .fa-brands, .final11 .fa-brands {
+    font-size: 20px;
+}
+	.logo1 {
+		display: flex;
+		justify-content: center;
+	}
+	section {
+		width: 110px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.exp {
+		display: flex;
+
+		font-size: 11px;
+		margin-right: 0px;
+	}
+	.colores {
+		width: 55%;
+	}
+
+	.talla {
+		width: 60px;
+	}
+	.footer1,
+	.relojes,
+	.cards,
+	.trade {
+		width: 95%;
+	}
+	.tallas {
+		width: 50%;
+	}
+	.circulo {
+		margin-bottom: 10px;
+	}
+	.img18 {
+		width: 45px;
+		margin-top: 6px;
+	}
+
+	.blue {
+		width: 90px;
+		height: 40px;
+		margin-bottom: 20px;
+		font-size: 15px;
+	}
+	.nrg {
+		text-align: left;
+		padding-top: 20px;
+		font-size: 18px;
+	}
+	.contenido2 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-left: 2px;
+		align-items: center;
+	}
+	strong {
+		font-size: 16px;
+	}
+
+	.cards {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.boton2 {
+		margin: 0;
+		display: flex;
+		justify-content: start;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.reloj {
+		font-size: 10px;
+	}
+	.week {
+		font-size: 25px;
+	}
+	.grilla1 {
+		margin-bottom: 10px;
+	}
+	.b11 {
+		width: 270px;
+		height: 40px;
+	}
+	.negi {
+		width: 60px;
+		font-size: 14px;
+		height: 33px;
+	}
+	.load {
+		margin: 50px;
+	}
+	.formas {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.precios {
+		width: 50%;
+	}
+	.ctn3 {
+		display: flex;
+		justify-content: center;
+	}
+	.precio {
+		width: 50px;
+	}
+
+	.trade {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	.footer1 {
+		display: grid;
+		grid-template-columns:  1fr;
+	}
+
+	.fotter4 {
 		margin-top: 20px;
 	}
-	.contenido{
+	.contenido {
 		display: grid;
-		grid-template-columns: 1fr ;
+		grid-template-columns: 1fr;
 	}
-	.img40{
+	.img40 {
 		height: 120px;
 	}
 	.week1 {
-        font-size: 13px;
-    }
-.footer1{
+		font-size: 13px;
+	}
+	.footer1 {
+		text-align: center;
+	}
+	.grilla3 {
+    font-size: 17px;
+}
+	.gr5 {
+		padding-bottom: 0px;
+		margin-top: 20px;
+	}
+	.buscadors {
+		font-size: 15px;
+	}
+	.fotter5{
+		font-size: 16px;
+	}
+	.fotter5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+	.gr {
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+	.buscador {
+		font-size: 22px;
+		display: flex;
+		justify-content: center;
+	}
+	.products {
+		font-size: 22px;
+	}
+	.fotter3 {
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+.finalfu{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	justify-content:center ;
+}
+.final{
+	display: flex;
+	justify-content: center;
 	text-align: center;
 }
-.gr5 {
-	padding-bottom: 0px;
-	margin-top: 20px;
+.gf {
+    font-size: 16px;
+    
+    margin-top: 13px;
 }
-.buscadors{
-	font-size: 15px;
 }
-.buscador {
-    font-size: 22px;
-    display: flex
-;
+
+
+@media (max-width: 514px) {
+
+}
+
+@media (max-width: 463px) {
+	.finalito {
+		width: 95%;
+	}
+	.hh {
+		font-size: 10px;
+		margin-right: 3px;
+	}
+
+
+
+}
+
+@media (max-width: 410px) {
+	.b11 {
+    width: 220px;
+    height: 40px;
+}
+.mover {
+		position: relative;
+		top: 10px;
+		left: 30px;
+	}
+.fotter3 {
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+.finalfu{
+	display: grid;
+grid-template-columns: 1fr;
+	text-align: center;
+	justify-content:center ;
+}
+	.trade {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.buscador {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.hn1 {
+		height: 150px;
+	}
+	.buscadors {
+		margin-left: 25px;
+	}
+	.load {
+		margin-left: 25px;
+	}
+	.boton2 {
+		margin: 0px;
+	}
+	.img16 {
+    width: 160px;
+}
+	.cards,
+	.footer1 {
+		width: 85%;
+	}
+	.img2 {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		right: 40px;
+		top: 40px;
+	}
+	.d1 {
+		position: relative;
+		left: 10px;
+		top: 30px;
+	}
+	.explorer {
+		height: 120px;
+	}
+	section {
+		width: 120px;
+	}
+	.products {
+		font-size: 15px;
+	}
+	.gg {
+    color: gray;
+    display: flex;
     justify-content: center;
 }
-.products {
-	font-size: 17px;
+.final11 {
+    display: flex;
+    justify-content: center;
 }
-			}
+.gg .fa-brands, .final11 .fa-brands {
+    font-size: 20px;
+    margin: 10px;
+}
+.hh {
+    font-size: 17px;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+}
 
-			@media (max-width: 463px) {
-				.finalito{
-					width: 95%;
-				}
-				.hh{
-					font-size: 10px;
-					margin-right: 3px;
-				}
-			}
-
-
-
-			@media (max-width: 410px) {
-
-				.trade{
-					display: grid;
-					grid-template-columns: 1fr  ;
-					
-			 }
-			 .buscador{
-				margin-top: 10px;
-				margin-bottom: 10px;
-			 }
-.hn1{
-	height: 150px;
+@media (max-width: 350px) {
+	.finalito {
+		width: 90%;
+		display: flex;
+		flex-wrap: wrap;		
+	}
+	.products {
+    font-size: 18px;
 }
-.buscadors{
-	margin-left: 25px;
+.d12, .shops {
+    font-size: 12px;
 }
-.load {
-
-	margin-left: 25px;
-}
-.boton2{
-	margin: 0px;
-}
-.img16 {
-	width: 110px;
-}
-.cards,.footer1{
-	width: 85%;
-}
-.img2 {
-	width: 50PX;
-	height: 50PX;
-	position: relative;
-	right: 40PX;
-	TOP: 40PX;
-}
-.d1 {
-	position: relative;
-	left: 10PX;
-	top: 30px;
 	
+	.hn1 {
+		height: 150px;
+		margin: 0px;
+	}
+	.contenido1 {
+		display: flex;
+		justify-content: left;
+		flex-direction: column;
+		width: 80%;
+	}
+	.products {
+		font-size: 14px;
+	}
+	.mover{
+		position: relative;
+		top: 10px;
+		left: 10px;
+	}
+	
+	.d1 {
+		position: relative;
+		left: 10px;
+		top: 40px;
+	}
+	.exp {
+		margin: 0;
+	}
+	.week {
+    font-size: 25px;
 }
-.explorer {
-	height: 120px;
+	.nrg {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 14px;
 }
-section{
-	width: 120px;
+
+	.gg .fa-brands,
+	.final11 .fa-brands {
+		font-size: 8px;
+	}
+	.gf {
+		font-size: 8px;
+		margin-left: 5px;
+	}
+	.final11 {
+    display: flex;
+    justify-content: center;
 }
-.products {
-	font-size: 15px;
+	.hh {
+		font-size: 8px;
+		margin-right: 3px;
+	}
+	.week1 {
+		font-size: 10px;
+	}
+	
+	.grilla3 {
+    font-size: 14px;
 }
-			}
+	.fotter4 {
+		margin-top: 20px;
+		display: flex;
+	}
+	.gr5 {
+		padding-bottom: 0px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.titulo {
+    font-size: 17px;
+}
+	.negi {
+		width: 40px;
+		font-size: 8px;
+		height: 27px;
+	}
+	.reloj i {
+		font-size: 8px;
+	}
 
-			@media (max-width: 350px) {
+	.b11 {
+		width: 150px;
+	}
+	.b11 .dh i {
+		font-size: 10px;
+	}
+	.b111 {
+		font-size: 10px;
+	}
+	.gg .fa-brands, .final11 .fa-brands {
+    font-size: 20px;
+}
+.hh {
+    font-size: 14px;
+    margin-right: 3px;
+}
+.gf {
+    font-size: 15px;
+    margin-left: 5px;
+}
+}
+@media (max-width: 350px) {
+	.d1 {
+		position: relative;
+		left: 0px;
+		top: 20px;
+	}
+	.img8, .img40 {
+    width: 130px;
+    height: 130px;
+}
+	.products {
+		font-size: 15px;
+	}
+	
+	.img2 {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		right: 30px;
+		top: 25px;
+	}
+	.explorer {
+		height: 100px;
+	}
+	.idioma {
+		padding-left: 20px;
+	}
+	.ingresar {
+		padding-right: 20px;
+	}
+	.titu,
+	.titu1,
+	.titu2 {
+		font-size: 10px;
+	}
+	.contenedito {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-top: 40px;
+	}
+	.fotter4 {
+		margin-top: 20px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 7px;
+	}
+	.fotter5 {
+		margin-top: 5px;
+		margin-bottom: 7px;
+	}
 
-				.finalito {
-					width: 90%;
-					display: flex
-			;
-					justify-content: center;
-				}
-				.hn1 {
-					height: 150px;
-					margin: 0px;
-				}
-				.contenido1{
-					display: flex;
-					justify-content: left;
-					flex-direction: column;
-					width: 80%;
-				}
-				.products {
-					font-size: 14px;
-				}
-				.d12 {
-					font-size: 10px;
-				}
-				.d1 {
-					position: relative;
-					left: 10PX;
-					top: 40px;
-				}
-				.exp{
-					margin: 0;
-				}
-				.week{
-					font-size: 15px
-				}
-				.contenido2{
-					padding: 35px;
-				}
+	.gr {
+		font-size: 15px;
+		padding-bottom: 5px;
+	}
 
-				
-				  .gg .fa-brands,
-				  .final11 .fa-brands {
-					font-size: 8px;
-				  }
-				  .gf {
-					font-size: 8px;
-					margin-left: 5px;
-				}
-				.hh {
-					font-size: 8px;
-					margin-right: 3px;
-				}
-				.week1 {
-					font-size: 10px;
-				}
-				strong {
-					font-size: 10px;
-				}
-				.grilla3 {
-					font-size: 9px;
-				}
-				.fotter4 {
-					margin-top: 20px;
-					display: flex;
-			;
-				}
-				.gr5 {
-					padding-bottom: 0px;
-					margin-top: 20px;
-					margin-bottom: 10px;
-				}
-				.titulo {
-					font-size: 13px;
-				}
-				.negi {
-					width: 40px;
-					font-size: 8px;
-					height: 27px;
-				}
-				.reloj i {
-					font-size: 8px;
-				  }
-				  
-				.b11 {
-					width: 150px;
-				}
-				.b11 .dh i {
-					font-size: 10px;
-				  }
-				  .b111{
-					font-size: 10px;
-				  }
-				  
-			}
-			@media (max-width: 350px) {
-				.d1 {
-					position: relative;
-					left: 0px;
-					top: 20px;
-				}
-				.products {
-					font-size: 12px;
-				}
-				.d12 {
-					font-size: 8px;
-				}
-				.img2 {
-					width: 50PX;
-					height: 50PX;
-					position: relative;
-					right: 30PX;
-					TOP: 25PX;
-				}
-				.explorer {
-					height: 100px;
-				}
-				.idioma {
-					padding-left: 20px;
-				}
-				.ingresar {
-					padding-right: 20px;
-				}
-				.titu,.titu1,.titu2{
-					font-size: 10px;
-				}
-				.contenedito {
-					display: flex
-				;
-					justify-content: center;
-					align-items: center;
-					text-align: center;
-					padding-top: 40px;
-				}
-				.fotter4 {
-					margin-top: 20px;
-					display: flex
-			;
-					justify-content: center;
-					margin-bottom: 7px;
-				}
-				.fotter5 {
-					margin-top: 5px;
-					margin-bottom: 7px;
-				}
-
-				.gr {
-					font-size: 15px;
-					padding-bottom: 5px;
-				}
-				.contenido2 {
-					padding: 35px;
-					
-					padding-bottom: 10px;
-				}
-				.nrg {
-					text-align: left;
-					padding-top: 20px;
-					font-size: 10px;
-				}
-				.img18 {
-					width: 35px;
-					margin-top: 2px;
-				}
-				.img9 {
-					width: 100px;
-					height: 90px;
-				}
-				.img8, .img40 {
-					width: 100px;
-					height: 100px;
-				}
-				.footer1 {
-					display: grid
-			;
-					grid-template-columns: 1fr;
-				}
-			}
+	
+	.img18 {
+		width: 35px;
+		margin-top: 2px;
+	}
+	.img9 {
+		width: 100px;
+		height: 90px;
+	}
+	
+	.footer1 {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.forma {
+    height: 190px;
+}
+}
