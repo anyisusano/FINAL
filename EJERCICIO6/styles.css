@@ -14,7 +14,7 @@
 .titu1,
 .titu2 {
 	color: gray;
-	font-size: 20px;
+	font-size: 15px;
 	height: 30px;
 	padding-top: 20px;
 	padding-left: 10px;
@@ -536,6 +536,7 @@ hr {
 }
 .lv{
 	display: flex;
+	margin-bottom: 11px;
 }
 .circulo{
 	margin-right: 10px;
@@ -602,6 +603,9 @@ hr {
 				padding-bottom: 10px;
 				padding-top: 15px;
 			}
+				.titu,.titu1,.titu2{
+			font-size: 15px;
+		}
 	}
 	
 		
