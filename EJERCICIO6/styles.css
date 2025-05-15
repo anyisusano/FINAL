@@ -160,6 +160,7 @@ section {
 	left: 50px;
 	top: 10px;
 	font-size: 18px;
+	color: rgb(0, 153, 255);
 }
 
 /* -----------------------------------------------------------FINEXPLORER------------------------------------------------ */
@@ -449,6 +450,11 @@ hr {
 }
 .final11 {
 	display: flex;
+}
+.mover{
+	position: relative;
+	left: 100px;
+	bottom: 9px;
 }
 
 /* RELOJ//////////////////////////////////////////////////////////////////////////////// */
@@ -933,6 +939,7 @@ hr {
 		top: 10px;
 		right: 1px;
 	}
+	
 	.blue2 {
 		background-color: rgb(7, 126, 182);
 		margin-top: 20px;
@@ -1086,8 +1093,8 @@ hr {
 		grid-template-columns: 1fr 2fr;
 	}
 	.logo {
-		width: 50px;
-		height: 40px;
+		width: 70px;
+		height: 60px;
 	}
 	.hn1 {
 		height: 120px;
@@ -1168,10 +1175,10 @@ hr {
 }
 
 @media (max-width: 600px ) {
-	.logo {
-		width: 50px;
-		height: 40px;
-	}
+.logo {
+    width: 60px;
+    height: 70px;
+}
 	.hn1 {
 		height: 120px;
 		padding: 0;
@@ -1462,10 +1469,9 @@ hr {
 		width: 95%;
 	}
 	.hh {
-		font-size: 10px;
-		margin-right: 3px;
-	}
-
+    font-size: 14px;
+    margin-right: 3px;
+}
 
 
 }
@@ -1476,10 +1482,16 @@ hr {
     height: 40px;
 }
 .mover {
-		position: relative;
-		top: 10px;
-		left: 30px;
-	}
+    position: relative;
+    top: 10px;
+    left: 12px;
+}
+.d12 {
+    font-size: 17px;
+}
+.shops {
+    font-size: 17px;
+}
 .fotter3 {
     margin-bottom: 7px;
     font-size: 17px;
@@ -1489,6 +1501,13 @@ hr {
 grid-template-columns: 1fr;
 	text-align: center;
 	justify-content:center ;
+}
+.gr5 {
+    padding-bottom: 16px;
+    margin-top: 20px;
+}
+.week1 {
+    font-size: 16px;
 }
 	.trade {
 		display: grid;
@@ -1505,8 +1524,9 @@ grid-template-columns: 1fr;
 		margin-left: 25px;
 	}
 	.load {
-		margin-left: 25px;
-	}
+    margin-left: 25px;
+    font-weight: bold;
+}
 	.boton2 {
 		margin: 0px;
 	}
@@ -1517,18 +1537,18 @@ grid-template-columns: 1fr;
 	.footer1 {
 		width: 85%;
 	}
-	.img2 {
-		width: 50px;
-		height: 50px;
-		position: relative;
-		right: 40px;
-		top: 40px;
-	}
-	.d1 {
-		position: relative;
-		left: 10px;
-		top: 30px;
-	}
+.img2 {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    right: 40px;
+    top: 35px;
+}
+.fotter5 {
+    font-size: 16px;
+    margin-bottom: 19px;
+}
+
 	.explorer {
 		height: 120px;
 	}
@@ -1536,7 +1556,7 @@ grid-template-columns: 1fr;
 		width: 120px;
 	}
 	.products {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.gg {
     color: gray;
@@ -1547,6 +1567,29 @@ grid-template-columns: 1fr;
     display: flex;
     justify-content: center;
 }
+.contenido2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2px;
+    align-items: center;
+    width: 100%;
+}
+.forma {
+    height: 200px;
+}
+.titulo {
+    font-size: 18px;
+}
+.logo {
+    width: 70px;
+    height: 60px;
+}
+.d1 {
+    position: relative;
+    left: 0px;
+    top: 30px;
+}
 .gg .fa-brands, .final11 .fa-brands {
     font-size: 20px;
     margin: 10px;
@@ -1556,13 +1599,18 @@ grid-template-columns: 1fr;
     margin-right: 3px;
     margin-top: 10px;
 }
+.fotter3 {
+    margin-bottom: 17px;
+    font-size: 17px;
+}
 }
 
 @media (max-width: 350px) {
 	.finalito {
 		width: 90%;
 		display: flex;
-		flex-wrap: wrap;		
+		flex-wrap: wrap;
+		border-color: white;		
 	}
 	.products {
     font-size: 18px;
@@ -1572,9 +1620,10 @@ grid-template-columns: 1fr;
 }
 	
 	.hn1 {
-		height: 150px;
-		margin: 0px;
-	}
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
 	.contenido1 {
 		display: flex;
 		justify-content: left;
@@ -1595,6 +1644,30 @@ grid-template-columns: 1fr;
 		left: 10px;
 		top: 40px;
 	}
+	.finalfu, .footer1, .relojes, .cards, .precios, .tallas, .contenido, .trade {
+    width: 95%;
+}
+
+.contenedito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.boton1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.colores {
+    width: 70%;
+}
+.contenido1{
+    
+    padding-top: 40px;
+    margin-left: 30px;
+}
 	.exp {
 		margin: 0;
 	}
@@ -1617,15 +1690,25 @@ grid-template-columns: 1fr;
 	}
 	.final11 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
-	.hh {
-		font-size: 8px;
-		margin-right: 3px;
-	}
+.hh {
+    font-size: 14px;
+    margin-right: 3px;
+    margin-left: 40px;
+}
+	.fotter5 {
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
 	.week1 {
-		font-size: 10px;
-	}
+    font-size: 13px;
+    color: white;
+}
+.forma {
+    height: 200px;
+    width: 240px;
+}
 	
 	.grilla3 {
     font-size: 14px;
@@ -1707,13 +1790,7 @@ grid-template-columns: 1fr;
 	.titu2 {
 		font-size: 10px;
 	}
-	.contenedito {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding-top: 40px;
-	}
+
 	.fotter4 {
 		margin-top: 20px;
 		display: flex;
@@ -1745,6 +1822,7 @@ grid-template-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
 	.forma {
-    height: 190px;
+    height: 200px;
 }
+
 }
