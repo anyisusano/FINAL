@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokecard</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body id="body">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div><h1  class="titulito">elige tu pokemon!!!</h1></div>
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+ 
+    <div class="contenedor_principal">
+        <div class="barra1">
+            <img src="img/pokemon.png" class="logo">
+            <img src="img/poke_ball.png" class="logo2">
+        </div>
+       
+        <div class="padre">
+            <!-- informacion derecha -->
+            <div>
+                <h1 id="titulo">Pokemon Name</h1>
+                <h2 id="altura">Height: 0 m</h2>
+                <h2 id="peso">Weight: 0 kg</h2>
+                <h1 id="numero">#000</h1>
+                <h1>Types</h1>
+                <div id="tipos"></div>
+                <h1>debilidades</h1>
+                <div id="tiposs"></div>
+            </div>
+            
+            <!-- fotos -->
+            <div>
+                <img src="" id="pok" alt="Pokemon front">
+                <img src="" id="poke" alt="Pokemon back">
+            </div>
+
+            <!-- informacion izq -->
+            <div class="mover">
+                <h1>STATS</h1>
+                <h2 id="hp">HP: 0</h2>
+                <div class="barra-contenedor"><div class="barra" id="barra1" data-value="0"></div></div>
+                <h2 id="atackk">Attack: 0</h2>
+                <div class="barra-contenedor"><div class="barra" id="barra2" data-value="0"></div></div>
+                <h2 id="defense">Defense: 0</h2>
+                <div class="barra-contenedor"><div class="barra" id="barra3" data-value="0"></div></div>
+                <h2 id="special-atackk">Sp. Atk: 0</h2>
+                <div class="barra-contenedor"><div class="barra" id="barra4" data-value="0"></div></div>
+                <h2 id="speed">Speed: 0</h2>
+                <div class="barra-contenedor"><div class="barra" id="barra5" data-value="0"></div></div>
+            </div>
+        </div>
+    </div>
+     </div>
+     <div class="flip-card-back">
+      <img src="img/fonod.jpg" alt="">
+    </div>
+    
+  </div>
+</div>
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>

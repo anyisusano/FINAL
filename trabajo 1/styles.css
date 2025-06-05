@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(red, yellow);
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.titulito {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* BARRA SUPERIOR */
+.barra1 {
+    background-color: #ffcd00;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 5px solid #3d7dca;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo2 {
+    height: 40px;
+}
+
+/* TARJETA PRINCIPAL */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 940px;
+    aspect-ratio: 3 / 2;
+    perspective: 1000px;
+    margin: 20px auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front {
+    background-color: #f7f7f7;
+}
+
+.flip-card-back {
+    background: linear-gradient(rgb(217, 255, 0), rgb(255, 45, 45));
+    transform: rotateY(180deg);
+}
+
+/* CONTENIDO TARJETA */
+.contenedor_principal {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 900px;
+    border: 10px solid #3d7dca;
+}
+
+.contenedor_principal:hover {
+    color: #4CAF50;
+}
+
+.padre {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.padre > div {
+    flex: 1;
+    padding: 10px;
+    min-width: 250px;
+}
+
+#pok,
+#poke {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 20px;
+    border: 5px solid #3d7dca;
+    animation: swing 2s ease-in-out infinite alternate;
+    transform-style: preserve-3d;
+    max-width: 100%;
+}
+
+/* TEXTOS Y ESTILOS */
+#titulo {
+    color: #3d7dca;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+#numero {
+    color: #666;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#altura,
+#peso {
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 16px;
+    color: #3d7dca;
+    margin: 15px 0 10px;
+}
+
+h2 {
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* TIPOS Y DEBILIDADES */
+#tipos,
+#tiposs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#tipos button,
+#tiposs button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* ESTADÍSTICAS */
+.mover {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.barra-contenedor {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    margin: 5px 0 15px;
+    overflow: hidden;
+    border: 2px solid #333;
+    position: relative;
+}
+
+.barra {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.barra::after {
+    content: attr(data-value);
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ANIMACIONES */
+@keyframes swing {
+    from {
+        transform: translateX(-10px) rotateY(-15deg);
+    }
+    to {
+        transform: translateX(10px) rotateY(15deg);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1000px) {
+    .padre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .padre > div {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+       #pok, #poke {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .flip-card-front {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulito {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .titulito {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 10px;
+    }
+
+    #titulo {
+        font-size: 16px;
+    }
+
+    .barra::after {
+        font-size: 8px;
+    }
+
+    #pok, #poke {
+        width: 100px;
+        height: 100px;
+    }
+    
+    body {
+
+    
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(red, yellow);
+  
+    overflow-x: hidden;
+}
+
+
+}
