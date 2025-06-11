@@ -227,7 +227,7 @@ h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* ANIMACIONES */
+
 @keyframes swing {
     from {
         transform: translateX(-10px) rotateY(-15deg);
@@ -237,22 +237,33 @@ h2 {
     }
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 1000px) {
+@media (max-width: 1000px ) {
     .padre {
         flex-direction: column;
         align-items: center;
     }
 
-    .padre > div {
+     .padre > div {
         width: 100%;
         padding: 10px 0;
+        text-align: center;
     }
 
-       #pok, #poke {
-        width: 200px;
-        height: 200px;
-    }
+
+       .fotos{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+    #tipos, #tiposs {
+    display: flex
+;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+    /* text-align: center; */
+    justify-content: center;
+}
 
 
     .flip-card-front {
@@ -284,10 +295,13 @@ h2 {
         font-size: 8px;
     }
 
-    #pok, #poke {
-        width: 100px;
-        height: 100px;
-    }
+ 
+    .fotos{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
     
     body {
 
@@ -299,5 +313,9 @@ h2 {
     overflow-x: hidden;
 }
 
+
+}
+
+@media (max-width: 350px) {
 
 }
