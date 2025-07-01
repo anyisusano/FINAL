@@ -1,0 +1,298 @@
+
+:root {
+  --primary-color: #00796b;
+  --primary-light: #b2dfdb;
+  --primary-dark: #004d40;
+  --accent-color: #ff5722;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #424242;
+  --white: #ffffff;
+  --error-color: #d32f2f;
+  --success-color: #388e3c;
+}
+
+.form-control, .form-select
+ {
+    border-radius: 8px;
+    border: 2px solid var(--medium-gray);
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+
+}
+.form-control1,.form-select1,.form-control1{
+     border-radius: 8px;
+    border: 2px solid var(--medium-gray);
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+    width: 300px
+}
+textarea.form-control {
+    min-height: calc(1.5em + .75rem + calc(var(--bs-border-width) * 2));
+    width: 700px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+
+header {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  padding: 1.5rem;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1 i {
+  margin: 0 10px;
+  font-size: 1.8rem;
+}
+
+
+.grilla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger {
+  background-color: var(--error-color);
+}
+
+.btn-warning {
+  background-color: #ff9800;
+}
+
+
+.form-control, .form-select {
+  border-radius: 8px;
+  border: 2px solid var(--medium-gray);
+  padding: 0.75rem 1rem;
+  transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 121, 107, 0.25);
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color) !important;
+    display: flex
+;
+    justify-content: center;
+}
+.fa-notes-medical:before {
+    content: "\f481";
+    margin-left: 14px;
+}
+.card-text:last-child{
+
+    margin-bottom: 0;
+    margin-left: 18px;
+}
+
+#registros {
+  display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  background-image: url('https://img.freepik.com/vector-premium/patron-transparente-dibujado-mano-clinica-veterinaria-mascotas-medicamentos-primeros-auxilios-ilustracion-vector-estilo-doodle-aislado-sobre-fondo-blanco_657899-249.jpg');
+  background-size: 30%;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+
+.badge {
+  padding: 0.35em 0.65em;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-success {
+  background-color: var(--success-color) !important;
+}
+
+.bg-danger {
+  background-color: var(--error-color) !important;
+}
+
+.modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1.2rem;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  padding: 1rem 1.5rem;
+  background-color: var(--light-gray);
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  color: var(--dark-gray);
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.btn-sm:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .grilla {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  #registros {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+
+.estado-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--white);
+  animation: spin 1s ease-in-out infinite;
+}
+#filtroEstado{
+width: 300px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

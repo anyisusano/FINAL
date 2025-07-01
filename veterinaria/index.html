@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veterinaria Mascotas Exóticas</title>
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="./CSS/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="text-center"><i class="fa-solid fa-otter"></i> Administrador de Citas Veterinarias <i class="fa-solid fa-otter"></i></h1>
+    </header>
+
+    <div class="grilla">
+      <div>
+        <select id="filtroEstado" class="form-select" onchange="filtrarPorEstado()">
+          <option value="">filtrar por estado</option>
+          <option value="Abierta">Abierta</option>
+          <option value="Terminada">Terminada</option>
+          <option value="Anulada">Anulada</option>
+        </select>
+      </div>
+      
+      <div>
+        <input type="text" id="buscarPropietario" placeholder="Buscar..." class="form-control" />
+      </div>
+
+      <div class="d-flex gap-2">
+        <button type="button" class="btn btn-primary" id="nregistro" data-bs-toggle="modal" data-bs-target="#modalCita">
+          <i class="bi bi-plus-circle"></i> Nueva Cita
+        </button>
+        <button class="btn btn-danger" onclick="borrarTodo()" id="borrarTodo">
+          <i class="bi bi-trash"></i> Borrar Todo
+        </button>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCita" tabindex="-1" aria-labelledby="modalCitaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCitaLabel">Nueva Cita</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="formCita">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre de la mascota *</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Max" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="propietario" class="form-label">Propietario *</label>
+                  <input type="text" class="form-control" id="propietario" placeholder="Ej: Juan Pérez">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="telefono" class="form-label">Teléfono *</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="Ej: 555-1234567">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="fecha" class="form-label">Fecha *</label>
+                  <input type="date" class="form-control" id="fecha">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="hora" class="form-label">Hora *</label>
+                  <input type="time" class="form-control" id="hora" min="08:00" max="20:00">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="mascota" class="form-label">Tipo de mascota *</label>
+                <select class="form-select" id="mascota" required>
+                  <option value="" disabled selected>Seleccione una opción</option>
+                  <option value="huron">Hurón</option>
+                  <option value="iguana">Iguana</option>
+                  <option value="serpiente">Serpiente</option>
+                  <option value="erizo">Erizo</option>
+                  <option value="canario">Canario</option>
+                  <option value="cuy">Cuy (Cobaya)</option>
+                  <option value="camaleon">Camaleón</option>
+                  <option value="gato">Gato</option>
+                  <option value="ardilla">Ardilla</option>
+                  <option value="pez">Pez</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="sintomas" class="form-label">Síntomas *</label>
+                <textarea class="form-control" id="sintomas" rows="3" placeholder="Describa los síntomas"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="estado" class="form-label">Estado de la cita *</label>
+                <select class="form-select" id="estado" required>
+                  <option value="" disabled selected>Seleccione un estado</option>
+                  <option value="Abierta">Abierta</option>
+                  <option value="Terminada">Terminada</option>
+                  <option value="Anulada">Anulada</option>
+                </select>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button onclick="guardar()" type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="registros" class="mb-4"></div>
+
+
+    <div id="loading-spinner" class="text-center my-4 d-none">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Cargando...</span>
+      </div>
+      <p class="mt-2">Procesando...</p>
+    </div>
+
+    <footer class="text-center py-3">
+      <h6>© 2025 veterinaria - Todos los derechos reservados Anyi</h6>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+ 
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
