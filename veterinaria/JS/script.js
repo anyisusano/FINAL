@@ -1,7 +1,6 @@
 let citas = JSON.parse(localStorage.getItem("citas")) || [];
 let editandoId = null;
 
-
 const imagenesMascotas = {
   huron: "https://i.gifer.com/cV0.gif",
   iguana: "https://i.makeagif.com/media/12-06-2017/sTViAt.gif",
@@ -16,20 +15,15 @@ const imagenesMascotas = {
   otro: "https://via.placeholder.com/150?text=Mascota"
 };
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  
   const fechaInput = document.getElementById("fecha");
   const hoy = new Date().toISOString().split("T")[0];
   fechaInput.min = hoy;
 
-
   mostrarCitas();
-
 
   document.getElementById("buscarPropietario")?.addEventListener("input", filtrarPorPropietario);
 });
-
 
 function guardar() {
   if (!validarFormulario()) return;
@@ -47,30 +41,28 @@ function guardar() {
   };
 
   if (editandoId) {
-
     const indice = citas.findIndex((cita) => cita.id === editandoId);
     if (indice !== -1) {
       citas[indice] = nuevaCita;
       mostrarMensaje("Cita actualizada correctamente", "success");
     }
   } else {
-
     citas.push(nuevaCita);
     mostrarMensaje("Cita guardada correctamente", "success");
   }
-
 
   localStorage.setItem("citas", JSON.stringify(citas));
   filtrarPorEstado();
   limpiarFormulario();
 
-
   const modal = bootstrap.Modal.getInstance(document.getElementById("modalCita"));
   if (modal) modal.hide();
 }
 
-
 function mostrarCitas(lista = citas) {
+  // Ordenar por fecha y hora
+  lista.sort((a, b) => new Date(`${a.fecha}T${a.hora}`) - new Date(`${b.fecha}T${b.hora}`));
+
   const contenedor = document.getElementById("registros");
   contenedor.innerHTML = "";
 
@@ -154,7 +146,6 @@ function mostrarCitas(lista = citas) {
   });
 }
 
-
 function eliminarCita(id) {
   Swal.fire({
     title: "¿Estás seguro?",
@@ -175,14 +166,12 @@ function eliminarCita(id) {
   });
 }
 
-
 function editarCita(id) {
   const cita = citas.find((c) => c.id === id);
   if (!cita) return;
 
   editandoId = id;
 
-  
   document.getElementById("nombre").value = cita.nombre;
   document.getElementById("propietario").value = cita.propietario;
   document.getElementById("telefono").value = cita.telefono;
@@ -192,15 +181,12 @@ function editarCita(id) {
   document.getElementById("sintomas").value = cita.sintomas;
   document.getElementById("estado").value = cita.estado;
 
-
   document.getElementById("btnGuardar").textContent = "Actualizar";
   document.getElementById("modalCitaLabel").textContent = "Editar Cita";
 
-  
   const modal = new bootstrap.Modal(document.getElementById("modalCita"));
   modal.show();
 }
-
 
 function filtrarPorEstado() {
   const estadoSeleccionado = document.getElementById("filtroEstado").value;
@@ -211,11 +197,10 @@ function filtrarPorEstado() {
   mostrarCitas(citasFiltradas);
 }
 
-
 function filtrarPorPropietario() {
   const textoBusqueda = document.getElementById("buscarPropietario").value.toLowerCase();
   const estadoSeleccionado = document.getElementById("filtroEstado").value;
-  
+
   let citasFiltradas = citas.filter((cita) =>
     cita.propietario.toLowerCase().includes(textoBusqueda) ||
     cita.nombre.toLowerCase().includes(textoBusqueda)
@@ -250,18 +235,17 @@ function validarFormulario() {
   for (const campo of campos) {
     const elemento = document.getElementById(campo.id);
     const valor = elemento.value.trim();
-    
+
     if (!valor) {
       mostrarError(elemento, campo.mensaje);
       return false;
     }
-    
-    
+
     if (campo.id === 'telefono' && !/^\d{10}$/.test(valor)) {
       mostrarError(elemento, 'El teléfono debe tener 10 dígitos');
       return false;
     }
-    
+
     if (campo.id === 'hora') {
       const hora = valor.split(':')[0];
       if (hora < 8 || hora > 19) {
@@ -269,17 +253,15 @@ function validarFormulario() {
         return false;
       }
     }
-    
-   
+
     limpiarError(elemento);
   }
 
- 
   const fechaInput = document.getElementById('fecha');
   const fecha = new Date(fechaInput.value);
   const hoy = new Date();
   hoy.setHours(0, 0, 0, 0);
-  
+
   if (fecha < hoy) {
     mostrarError(fechaInput, 'No puedes agendar citas en fechas pasadas');
     return false;
@@ -288,29 +270,26 @@ function validarFormulario() {
   return true;
 }
 
-
 function mostrarError(elemento, mensaje) {
   limpiarError(elemento);
   elemento.classList.add('is-invalid');
-  
+
   const divError = document.createElement('div');
   divError.className = 'invalid-feedback';
   divError.textContent = mensaje;
-  
+
   elemento.parentNode.appendChild(divError);
   elemento.focus();
 }
 
-
 function limpiarError(elemento) {
   elemento.classList.remove('is-invalid');
-  
+
   const feedback = elemento.parentNode.querySelector('.invalid-feedback');
   if (feedback) {
     feedback.remove();
   }
 }
-
 
 function mostrarMensaje(mensaje, tipo = "success") {
   Swal.fire({
@@ -322,7 +301,6 @@ function mostrarMensaje(mensaje, tipo = "success") {
   });
 }
 
-
 function getBadgeClass(estado) {
   switch (estado) {
     case "Abierta": return "bg-primary";
@@ -331,7 +309,6 @@ function getBadgeClass(estado) {
     default: return "bg-secondary";
   }
 }
-
 
 function borrarTodo() {
   Swal.fire({
