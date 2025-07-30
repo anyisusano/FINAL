@@ -1,164 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <meta name="description" content="Portafolio creativo de Anyi Katherine Susano Fernandez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portafolio Creativo | Anyi Katherine</title>
 </head>
 <body>
-    <div class="padre">
-        <div class="inicio">
-            <div class="arriba">
-                <div>
-        <h1 class="p">mis proyectos </h1> </div>
-         <div><h1 class="p1">👩‍💻anyikatherinesusanofernandez      </h1>
-        <h1 class="p1">💻⚙️ADSO 2926076 </h1></div>
-
-    
-      
-        </div>
-    </div>
-    
-      <div  class="cuadros">
-        
-    <div class="hijo">
-   
-        <h2>Mi diario personal 📰</h2>
-        <hr>
-    <div class="card" style="background-image: url('./img/img1.jpeg')">
-        <div class="textos">
-        
-          
-        </div>
-    
-</div>
-<h1 class="boton">  <a href="/ejercicio 1/index.html"> click!🦾</a> </h1>
-    </div>
-           
-        <div class="hijo">
-            <h2>Conciertos🎤</h2>
-            <div class="p">
-            <hr>
-            <div class="card1" style="background-image: url('./img/img2.jpeg')"> 
-          <div class="textos">
-        
-        </div>
+    <header class="inicio">
+        <div class="arriba">
+            <h1 class="p animate__animated animate__fadeInDown">Mis Proyectos Creativos</h1>
+            <div class="info-personal">
+                <p class="p1 animate__animated animate__fadeIn animate__delay-1s">👩‍💻 Anyi Katherine Susano Fernandez</p>
+                <p class="p1 animate__animated animate__fadeIn animate__delay-1s">💻⚙️ ADSO 2926076</p>
             </div>
-            <h1 class="boton" > <a href="/ejercicio 2/index.html">click🦾</a> </h1>  
+        </div>
+        <div class="scroll-indicator animate__animated animate__fadeIn animate__delay-2s animate__infinite">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <main class="padre">
+        <div class="cuadros">
+            <!-- Proyecto 1 - Diario Personal -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Mi diario personal 📰</h2>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+            
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/img1.jpeg')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Un diario digital personalizado con diseño responsive y entradas organizadas</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/ejercicio 1/index.html" class="boton">
+                    <span>Ver proyecto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <!-- Proyecto 2 - Conciertos -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Conciertos 🎤</h2>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/img2.jpeg')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Sitio web de eventos musicales</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/ejercicio 2/index.html" class="boton">
+                    <span>Ver proyecto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 3 - Presentación -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Presentación 😌</h2>
+                    <div class="tags">
+                         <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                         <span class="tag">Responsive</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/img4.jpeg')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Página de presentación personal diseño limpio pagina ¿quien soy?</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/ejercicio3/index.html" class="boton">
+                    <span>Ver proyecto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 4 - Video Render -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Video Render 🎥</h2>
+                    <div class="tags">
+                   
+                        <span class="tag">Documentacion</span>
+                   
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/img5.png')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>video Render</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/watch?v=msJDXHGS7AU&ab_channel=SamuelGomez" class="boton" target="_blank">
+                    <span>Ver video</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 5 - Curriculum -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Curriculum</h2>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Diseño</span>
+                         <span class="tag">Responsive</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/11.jpg')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Curriculum con diseño moderno y secciones organizadas</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/PROYECTO2/Index.html" class="boton">
+                    <span>Ver CV</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 6 - Tienda de accesorios -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>Tienda de accesorios</h2>
+                    <div class="tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                             <span class="tag">Responsive</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/electronica.jpeg')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Catálogo de productos electrónicos con carrito de compras funcional</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/EJERCICIO6/index.html" class="boton">
+                    <span>Visitar tienda</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 7 - POKECARD -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>POKECARD</h2>
+                    <div class="tags">
+                        <span class="tag">API</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                           <span class="tag">CSS</span>
+                               <span class="tag">Bootstrap</span>
+                                <span class="tag">Responsive</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/pokemon.png')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Buscador de Pokémon que consume API pública para mostrar información</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/trabajo 1/index.html" class="boton">
+                    <span>Explorar</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 8 - VETERINARIA -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>VETERINARIA</h2>
+                    <div class="tags">
+                        <span class="tag">Bootstrap</span>
+                         <span class="tag">LocalStorage</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                           <span class="tag">CSS</span>
+                              <span class="tag">CRUD</span>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/veterinaria.png')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Sitio web para clínica veterinaria con sistema de citas online</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="/veterinaria/index.html" class="boton">
+                    <span>Visitar sitio</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Proyecto 9 - TALONARIO -->
+            <div class="hijo animate__animated animate__fadeInUp">
+                <div class="project-header">
+                    <h2>TALONARIO</h2>
+                    <div class="tags">
+                        <span class="tag">Bootstrap</span>
+                         <span class="tag">LocalStorage</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                           <span class="tag">CSS</span>
+                              <span class="tag">CRUD</span>
+                               <span class="tag">VUE</span>
+
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./img/talonario.png')">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <p>Sistema de notas con persistencia de datos en el navegador</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="./TALONARIO1/dist/index.html" class="boton">
+                    <span>Probar app</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="final">
+        <div class="footer-content animate__animated animate__fadeIn">
+            <p class="f"><strong>Anyi Katherine Susano Fernandez</strong></p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
          
             </div>
+            <p class="copyright">© 2023 Todos los derechos reservados</p>
         </div>
+    </footer>
 
-        <div class="hijo">
-            <h2>Presentacion😌</h2>
-           
-            <div class="card2" style="background-image: url('./img/img4.jpeg')"> 
-                <div class="textos">
-               
-               <hr>  
-              </div>
-                  </div>
-                  <h1 class="boton" ><a href=/ejercicio3/index.html>click!🦾</a> </h1>
-                  </div>
-                  
-                  <div class="hijo">
-                    <h2>video Render🎥</h2>
-                    
-                  <div class="card3" style="background-image: url('./img/img5.png')"> 
-                    <div class="textos">
-                     
-                   <hr>
-                </div>
-                      </div>
-                      <h1 class="boton"> <a href="https://www.youtube.com/watch?v=msJDXHGS7AU&ab_channel=SamuelGomez"> click!🦾</a> </h1>
-                      </div>
-
-                      <div class="hijo">
-                        <h2>Curriculum</h2>
-                        
-                      <div class="card4" style="background-image: url('./img/11.jpg')"> 
-                        <div class="textos">
-                         
-                       <hr>
-                    </div>
-                          </div>
-                          <h1 class="boton" ><a href="/PROYECTO2/Index.html">click!🦾</a> </h1>
-                          </div>
-
-
-
-                          <div class="hijo">
-                            <h2>Tienda De accesorios</h2>
-                            
-                          <div class="card4" style="background-image: url('./img/electronica.jpeg')"> 
-                            <div class="textos">
-                             
-                           <hr>
-                        </div>
-                              </div>
-                              <h1 class="boton" ><a href="/EJERCICIO6/index.html">click!🦾</a> </h1>
-                              </div>
-	      
-                             <div class="hijo">
-                            <h2>POKECARD</h2>
-                            
-                          <div class="card4" style="background-image: url('./img/pokemon.png')"> 
-                            <div class="textos">
-                             
-                           <hr>
-                        </div>
-                              </div>
-                              <h1 class="boton" ><a href="/trabajo 1/index.html">click!🦾</a> </h1>
-                              </div>
-
-
-                                  <div class="hijo">
-                            <h2>VETERINARIA</h2>
-                            
-                          <div class="card4" style="background-image: url('./img/veterinaria.png')"> 
-                            <div class="textos">
-                             
-                           <hr>
-                        </div>
-                              </div>
-                              <h1 class="boton" ><a href="/veterinaria/index.html">click!🦾</a> </h1>
-                              </div>
-          
-                                  
-	       <div class="hijo">
-                            <h2>TALONARIO</h2>
-                            
-                          <div class="card4" style="background-image: url('./img/talonario.png')"> 
-                            <div class="textos">
-                             
-                           <hr>
-                        </div>
-                              </div>
-                         <h1 class="boton" ><a href="./TALONARIO1/dist/index.html">click!🦾</a> </h1>
-                              </div>
-
-                        </div>
-                     
-
-                        </div>
-                       
-  
-
-
-
-           
-      
-    </div>
-    </div></div>
-</div>
-<div class="final">
-    <p class="f"><strong>Anyi Katherine Susano Fernandez</strong> </p>
-</div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
